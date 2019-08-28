@@ -8,6 +8,8 @@ import {
 
 import Home from '../Home/Home';
 import Projects from '../Projects/Projects';
+import MyNavbar from '../MyNavbar/MyNavbar';
+import Tech from '../Technologies/Technologies';
 
 class App extends React.Component {
   componentDidMount() {
@@ -20,11 +22,13 @@ class App extends React.Component {
       <div>
         <BrowserRouter>
             <React.Fragment>
+                <MyNavbar />
                 <div className="row">
                   <Switch>
                     <Route path='/' exact component={Home} />
                     <Route path='/home' component={Home} />
                     <Route path='/projects' component={Projects} />
+                    <Route path='/technologies' component={Tech} />
                   </Switch>
                 </div>
             </React.Fragment>
