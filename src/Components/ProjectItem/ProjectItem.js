@@ -8,11 +8,11 @@ class ProjectItem extends React.Component {
   return (
     <div>
       <Card>
-        <CardImg top width="100%" src="" alt="Card image cap" />
+        <CardImg top width="60%" src={project.screenshot} alt="Card image cap" />
         <CardBody>
           <CardTitle>{project.title}</CardTitle>
           <CardText>{project.description}</CardText>
-          <CardText>{project.technologiesUsed}</CardText>
+          <CardText>Technologies: {project.technologiesUsed}</CardText>
           <Button className="githubButton">View on Github</Button>
         </CardBody>
       </Card>

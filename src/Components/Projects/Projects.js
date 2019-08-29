@@ -22,6 +22,10 @@ class Projects extends React.Component {
     const buildProjects = projects.map(project => (
       <ProjectItem
       project={project}
+      screenshot={project.screenshot}
+      title={project.title}
+      description={project.description}
+      technologiesUsed={project.technologiesUsed}
       key={project.id}
       />
     ));
