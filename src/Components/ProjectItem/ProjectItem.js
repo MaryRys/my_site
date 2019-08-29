@@ -1,18 +1,19 @@
 import React from 'react';
 import { Card, CardImg, CardText, CardBody,
   CardTitle, Button } from 'reactstrap';
+import './ProjectItem.scss';
 
 class ProjectItem extends React.Component {
   render() {
     const project = this.props;
   return (
-    <div>
+    <div className="cardContainer">
       <Card>
-        <CardImg top width="60%" src={project.screenshot} alt="Card image cap" />
+        <CardImg className="cardImage" src={project.screenshot} alt="Project image" />
         <CardBody>
-          <CardTitle>{project.title}</CardTitle>
-          <CardText>{project.description}</CardText>
-          <CardText>Technologies: {project.technologiesUsed}</CardText>
+          <CardTitle className="cardTitle">{project.title}</CardTitle>
+          <CardText className="cardText">{project.description}</CardText>
+          <CardText className="cardText">Technologies: {project.technologiesUsed}</CardText>
           <Button className="githubButton">View on Github</Button>
         </CardBody>
       </Card>

@@ -1,6 +1,7 @@
 import React from 'react';
 import dataGetter from '../../helpers/dataGetter';
 import ProjectItem from '../ProjectItem/ProjectItem';
+import './Projects.scss';
 
 class Projects extends React.Component {
   state = {
@@ -32,10 +33,12 @@ class Projects extends React.Component {
 
     return(
       <div className="projectsContainer container">
-        <h1>
-          Projects Page
-          { buildProjects }
-        </h1>
+        <div className="column">
+          <h1>Check out my Projects</h1>
+          <div className="projects">
+            { buildProjects }
+          </div>
+        </div>
       </div>
     )
   }
