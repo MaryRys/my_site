@@ -36,7 +36,7 @@ class Projects extends React.Component {
         <div className="column">
           <h1>Check out my Projects</h1>
           <div className="projects">
-            { buildProjects }
+          { buildProjects }
           </div>
         </div>
       </div>
