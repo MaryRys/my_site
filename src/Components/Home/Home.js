@@ -10,16 +10,15 @@ class Home extends React.Component {
   makeContacts = () => {
     return (
       <div>
-        <h3>Contact Me</h3>
         <Nav>
           <NavItem>
-            <NavLink href="https://www.linkedin.com/in/maryrys"><i class="fab fa-linkedin fa-3x"></i></NavLink>
+            <NavLink href="https://www.linkedin.com/in/maryrys"><i className="fab fa-linkedin fa-3x animated slideInDown"></i></NavLink>
           </NavItem>
           <NavItem>
-            <NavLink href="https://github.com/MaryRys"><i class="fab fa-github-alt fa-3x"></i></NavLink>
+            <NavLink href="https://github.com/MaryRys"><i className="fab fa-github-alt fa-3x animated slideInDown"></i></NavLink>
           </NavItem>
           <NavItem>
-            <NavLink href="mailto: rys.mary@gmail.com"><i class="far fa-envelope fa-3x"></i></NavLink>
+            <NavLink href="mailto: rys.mary@gmail.com"><i className="far fa-envelope fa-3x animated slideInDown"></i></NavLink>
           </NavItem>
         </Nav>
         <hr />
@@ -30,7 +29,7 @@ class Home extends React.Component {
   render() {
     return(
       <div className="homeContainer container">
-        <h1>Mary Rys</h1>
+        <h1 className="name animated slideInDown">Mary Rys</h1>
         <div className="container">
           <div className="row">
             <div className="myImg">
@@ -46,7 +45,10 @@ class Home extends React.Component {
               I began to investigate how I could improve upon what I was handed, which lead me to learning some code and the rest is history!
               </p>
             </div>
-            {this.makeContacts()}
+            <div className="contacts container">
+                <h3 className="contactsTitle">Contact Me</h3>
+                {this.makeContacts()}
+            </div>
           </div>
         </div>
       </div>
