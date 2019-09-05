@@ -1,0 +1,34 @@
+img {
+  width: 240px;
+  height: 360px;
+  border-radius: 20px;
+}
+
+.myImg {
+  display: flex;
+  justify-content: center;
+}
+
+.name {
+  text-shadow: 2px 2px 8px slategray;
+  display: flex;
+  justify-content: center;
+}
+
+.description {
+  padding: 10px;
+  margin: 10px;
+  border: 2px black solid;
+  background-color: lightblue;
+  border-radius: 20px;
+}
+
+.contacts {
+  display: flex;
+  justify-content: center;
+}
+
+.contactsTitle {
+  padding-top: 12px;
+}
+
