@@ -6,6 +6,7 @@ import {
   Nav,
   NavItem,
   NavLink } from 'reactstrap';
+  import './MyNavbar.scss';
 
   class MyNavbar extends React.Component {
   constructor(props) {
@@ -23,7 +24,7 @@ import {
   }
   render() {
     return (
-      <div>
+      <div className="navbar">
         <Navbar color="light" light expand="md">
           <NavbarToggler onClick={this.toggle} />
           <Collapse isOpen={this.state.isOpen} navbar>

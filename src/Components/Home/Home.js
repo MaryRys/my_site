@@ -31,7 +31,7 @@ class Home extends React.Component {
       <div className="homeContainer container">
         <h1 className="name animated slideInDown">Mary Rys</h1>
         <div className="container">
-          <div className="row">
+          <div className="bio">
             <div className="myImg">
               <img src={myImg} alt="headshot"></img>
             </div>
