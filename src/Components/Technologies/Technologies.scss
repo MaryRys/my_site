@@ -6,11 +6,18 @@
 .techs {
   display: flex;
   justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.techImg {
+  max-width: 200px;
+  height: 150px;
 }
 
 .singleTech {
   padding: 10px;
   margin: 10px;
+  flex-shrink: inherit;
 }
 
 h5 {

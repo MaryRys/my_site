@@ -2,6 +2,11 @@ import React from 'react';
 import './Technologies.scss';
 import csharp from '../../images/tech/csharp-e7b8fcd4ce.png';
 import jqueryImg from '../../images/tech/jquery1.png';
+import reactImg from '../../images/tech/react.png';
+import htmlcss from '../../images/tech/htmlcss.jpg';
+import msSQL from '../../images/tech/msSQL.png';
+import dotnet from '../../images/tech/msDOTNET.png';
+import visualStudio from '../../images/tech/visualstudio.png';
 
 class Tech extends React.Component {
   render() {
@@ -13,36 +18,34 @@ class Tech extends React.Component {
           </h1>
           <div className="techs container">
             <div className="singleTech">
-              <i className="fab fa-js-square fa-7x"></i>
-              <h5>Javascript</h5>
-            </div>
-            <div className="singleTech">
-              <i className="fab fa-html5 fa-7x"></i>
-              <h5>HTML5</h5>
-            </div>
-            <div className="singleTech">
-              <i className="fab fa-css3-alt fa-7x"></i>
-              <h5>CSS3</h5>
+              <img className="techImg" src={htmlcss} alt="HTML and CSS"></img>
             </div>
             <div className="singleTech">
               <i className="fab fa-sass fa-7x"></i>
-              <h5>Sass</h5>
+            </div>
+            <div className="singleTech">
+              <img className="techImg" src={reactImg} alt="ReactJS"></img>
+              <h5>ReactJS</h5>
             </div>
             <div className="singleTech">
               <i className="fab fa-github fa-7x"></i>
-              <h5>Github version control</h5>
+              <h5>Github</h5>
             </div>
             <div className="singleTech">
-              <i className="fab fa-react fa-7x"></i>
-              <h5>React JS</h5>
+              <img className="techImg" src={csharp} alt="C#"></img>
             </div>
             <div className="singleTech">
-              <img src={csharp} alt="C#"></img>
+              <img className="techImg" src={jqueryImg} alt="C#"></img>
             </div>
             <div className="singleTech">
-              <img src={jqueryImg} alt="C#"></img>
+              <img className="techImg" src={msSQL} alt="MS SQL Server"></img>
             </div>
-
+            <div className="singleTech">
+              <img className="techImg" src={dotnet} alt="MS .NET"></img>
+            </div>
+            <div className="singleTech">
+              <img className="techImg" src={visualStudio} alt="MS Visual Studio"></img>
+            </div>
           </div>
         </div>
       </div>
