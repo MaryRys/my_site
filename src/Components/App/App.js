@@ -19,7 +19,7 @@ class App extends React.Component {
   render() {
 
     return (
-      <div>
+      <div className="appPage">
         <BrowserRouter>
             <React.Fragment>
                 <MyNavbar />
