@@ -1,5 +1,7 @@
 import React from 'react';
 import './Technologies.scss';
+import csharp from '../../images/tech/csharp-e7b8fcd4ce.png';
+import jqueryImg from '../../images/tech/jquery1.png';
 
 class Tech extends React.Component {
   render() {
@@ -34,6 +36,13 @@ class Tech extends React.Component {
               <i className="fab fa-react fa-7x"></i>
               <h5>React JS</h5>
             </div>
+            <div className="singleTech">
+              <img src={csharp} alt="C#"></img>
+            </div>
+            <div className="singleTech">
+              <img src={jqueryImg} alt="C#"></img>
+            </div>
+
           </div>
         </div>
       </div>
